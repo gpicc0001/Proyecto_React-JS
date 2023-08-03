@@ -1,0 +1,12 @@
+.logoCarrito {
+    height: 5vh;
+}
+
+.carrito{
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito p{
+    text-align: center;
+}

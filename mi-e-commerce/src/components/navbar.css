@@ -1,0 +1,15 @@
+.micomponente {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+/* .micomponente img {
+    max-width: 100%;
+} */
+
+.btnNavBar {
+    width: 150px;
+}
