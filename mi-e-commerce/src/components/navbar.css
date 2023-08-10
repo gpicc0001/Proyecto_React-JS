@@ -3,13 +3,63 @@
     justify-content: space-between;
     height: 10vh;
     padding: 10px;
-    background-color: antiquewhite;
+    background: linear-gradient(to right, rgb(25, 30, 41) ,rgb(19,45,70));
+    align-items: center;
 }
 
-/* .micomponente img {
-    max-width: 100%;
-} */
+.logoEcommerce {
+    width: 20%;
+}
 
 .btnNavBar {
-    width: 150px;
+    display: flex;
+    height: 10px;
+    width: 16vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    padding: 20px 20px;
+    color: #3bd9d9;
+    border: 3px solid #3bd9d9 ;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: color 0.3s;
+    box-shadow: 0.3s;
+    border-color: 0.3s;
+    background-color: transparent;
+
+    
+
+}
+
+.btnNavBar:hover {
+    box-shadow: 
+    0 0 10px rgba(0, 255, 255, 1),
+    0 0 40px rgba(0, 255, 255, 0.7)
+    ;
+    border-color: #00ffff;
+    color: #00ffff;
+}
+
+.btnNavBar:before {
+    content: '';
+    top: -10px;
+    left: -70px;
+    position: absolute;
+    width: 40px;
+    height: 125%;
+    background-color: #00ffff;
+    transform: skewX(-20deg);
+    filter: blur(15px);
+
+}
+
+.btnNavBar:hover:before {
+    transform: translate(350px) skewX(-20deg);
+    transition-duration: 0.7s;
 }

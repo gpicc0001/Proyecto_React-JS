@@ -6,15 +6,18 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 
 
+
 export default function App() {
+
+  const nombreEcommerce = "E-Commerce" 
+  const message = "Hola Mundo"
   return (
     <>
 
       <div className='appContainer'>
         <NavBar />
-        <h1 className='title'>E-Commerce</h1>
-        <ItemListContainer />
-
+        <h1 className='title'> {nombreEcommerce} </h1>
+        <ItemListContainer mensaje={message} />
       </div>
 
     </>

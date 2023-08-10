@@ -2,12 +2,12 @@ import React from 'react';
 
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({mensaje}) => {
 
     return(
         <>
             <div>
-                <h1>Hola Mundo</h1>
+                <h1>Mensaje recibido desde App.js: {mensaje} </h1>
             </div>
         
         

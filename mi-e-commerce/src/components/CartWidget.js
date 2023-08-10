@@ -1,5 +1,5 @@
 import React from 'react';
-import carrito from '../img/carrito.png'
+import carrito_3 from '../img/carrito_3.png'
 import './cartwidget.css'
 
 
@@ -8,7 +8,7 @@ const CartWidget = () => {
     return(
     <>
         <div className='carrito'>
-            <img className='logoCarrito' src={carrito} alt=""/>
+            <img className='logoCarrito' src={carrito_3} alt=""/>
             <p>1</p>
         </div>
 
