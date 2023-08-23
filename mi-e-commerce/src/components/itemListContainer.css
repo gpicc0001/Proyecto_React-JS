@@ -1,5 +1,5 @@
 .itemListContainerStyle {
     display: flex;
     flex-direction: row;
-    
+    height: 40rem;
 }
