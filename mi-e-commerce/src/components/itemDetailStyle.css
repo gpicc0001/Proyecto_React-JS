@@ -1,0 +1,44 @@
+.itemDetailCard {
+    display: flex;
+    width: 25rem;
+
+}
+
+.itemDetailStyle {
+    display: flex;
+    width:20rem ;
+    flex-direction: column;
+    border-radius: 6px;
+    padding: 25px;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: rgba(3, 24, 24, 0.301); */
+    background: rgba(105, 110, 121, 0.3) ;
+    box-shadow: 0 8px 32px 0 rgba(6, 7, 7, 0.7);
+    backdrop-filter: blur(5px);
+    
+}
+
+.imgItemDetail {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.itemDetailHeader {
+    text-align: center;
+    color: rgb(133, 136, 135);
+}
+
+.itemDetailStyle section p {
+    color: rgb(133, 136, 135);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.itemDetailFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -1,0 +1,5 @@
+.itemListContainerStyle {
+    display: flex;
+    flex-direction: row;
+    
+}

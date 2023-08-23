@@ -1,16 +1,16 @@
-// import React from "react";
-// import './card.css';
+import React from "react";
+import './card.css';
 
 
 
-// const Card = ({children}) => {
-//     console.log({children});
+const Card = ({children}) => {
+    console.log({children});
 
-//     return (
-//         <div className="cardStyle">{children} </div>
+    return (
+        <div className="cardStyle">{children} </div>
 
-//     );
+    );
 
-// }
+}
 
-// export default Card;
+export default Card;
