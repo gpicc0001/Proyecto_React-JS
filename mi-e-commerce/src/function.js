@@ -19,12 +19,11 @@ export const getProducts = () => {
 
 //Funcion busqueda de producto por ID
 
-export const getProductsById = (productId) =>{
+export const getProductsById = (productId) => {
+    const numericProductId = parseInt(productId); // Convertir a número
     return new Promise((resolve) => {
-        resolve(products.find(prod => prod.id === productId))
-    })
-
-
+        resolve(products.find(prod => prod.id === numericProductId));
+    });
 }
 
 //Funcion busqueda de producto por Caterogry
