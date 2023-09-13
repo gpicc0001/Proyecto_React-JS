@@ -4,6 +4,8 @@ import CartWidget from './CartWidget';
 import logo_ecommerce from '../img/logo_ecommerce.png' 
 import { NavLink, Link } from "react-router-dom";
 
+
+
 const NavBar = () => {
 
    

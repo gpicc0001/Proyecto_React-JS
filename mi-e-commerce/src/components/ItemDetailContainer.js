@@ -3,24 +3,38 @@ import { getProductsById } from "../function.js";
 import ItemDetail from "./ItemDetail.js";
 import './itemDetailContainerStyle.css'
 import { useParams } from "react-router-dom";
-
+import { getDoc, doc } from "firebase/firestore";
+import { db } from "../index.js";
 
 
 const ItemDetailContainer = () => {
 
     const [product, setProduct] = useState(null) // estado inicial del contenedor. Va a mostrar un solo producto
-     
+    const [loading, setLoading] = useState(true) 
     const {itemId} = useParams()
 
     useEffect(() => {
-        getProductsById(itemId)
+        setLoading(true)
+
+        const docRef = doc(db, 'items', itemId)
+
+        getDoc(docRef)
             .then(response => {
-                setProduct(response)
+                const data = response.data()
+                const productAdapted = {id:response.id, ...data}
+                setProduct(productAdapted)
             })
             .catch(error => {
-                console.error(error)
+                console.log(error);
             })
-    }, [itemId])
+            .finally(() => {
+                setLoading(false)
+            })
+
+    },[itemId])
+
+
+   
     return (
 
          <div className="itemDetailContainerStyle">
@@ -31,3 +45,14 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer
+
+
+// useEffect(() => {
+//     getProductsById(itemId)
+//         .then(response => {
+//             setProduct(response)
+//         })
+//         .catch(error => {
+//             console.error(error)
+//         })
+// }, [itemId])

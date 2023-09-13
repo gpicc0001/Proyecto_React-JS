@@ -22,7 +22,7 @@ const Item = (products) =>{
                         <p>Stock:{products.stock} </p>
                     </section>
                     <footer>
-                        <Link to= {`/item/${products.id}`}>Ver detalle</Link>
+                        <Link to= {`/item/${products.id}`} className="counterButton">Ver detalle</Link>
                     </footer>
                 </article>
             </div>
