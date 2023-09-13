@@ -1,8 +1,13 @@
 .cartStyle {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items:center;
     justify-content: center;
     height: 50rem;
 
 
+}
+
+.cartStyleText {
+    color: rgb(133, 136, 135);
 }

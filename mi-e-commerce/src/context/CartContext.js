@@ -8,9 +8,9 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
     console.log(cart)
 
-    const addItem = (item, quantity) => {
-        if(!isInCart(item.id)) {
-            setCart(prev => [...prev, {...item, quantity}])
+    const addItem = (items, quantity) => {
+        if(!isInCart(items.id)) {
+            setCart(prev => [...prev, {...items, quantity}])
         } else {
             console.error ('El producto ya fue agregado')
         }
@@ -25,8 +25,8 @@ export const CartProvider = ({children}) => {
         setCart([])
     }
 
-    const isInCart = (item) =>{
-        return cart.some(prod => prod.id === item.id)
+    const isInCart = (items) =>{
+        return cart.some(prod => prod.id === items.id)
     }
 
     return (
